@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of N Numbers</title>
+</head>
+<body>
+
+    <h2>Sum of Numbers from 1 to N</h2>
+
+    <input type="number" id="num" placeholder="Enter N">
+    <button onclick="calculateSum()">Calculate</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateSum() {
+            let N = parseInt(document.getElementById("num").value);
+            let sum = 0;
+
+            for (let i = 1; i <= N; i++) {
+                sum += i;
+            }
+
+            document.getElementById("result").innerHTML =
+                "Sum of numbers from 1 to " + N + " is: " + sum;
+        }
+    </script>
+
+</body>
+</html>
